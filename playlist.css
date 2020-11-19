@@ -1,0 +1,121 @@
+/* Master styles */
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /*creates grid for top bar and 1fr is fractional unit.  Its telling it end to end. */
+}
+
+/* Nav styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 2px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+
+
+
+/* playlist stylings*/
+* {
+    box-sizing: border-box;
+  }
+  body {
+    color: #fff;
+    font-size: 1em;
+    font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 1em;
+    background-color: #42b4d6;
+  }
+  
+  main {
+    width: 60%;
+    max-width: 1080px;
+    padding: 40px 0 0;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 3.75em;
+    text-align: center;
+    margin-bottom: 0.35em;
+    text-shadow: 0 2px 0 rgba(0,0,0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+  }
+  
+  main p {
+    font-size: 1.9em;
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  ul,
+  ol {
+    list-style-position: inside;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;  
+  }
+  li {
+    line-height: 1.25;
+    margin: 0 0 1.1em;
+    color: #42b4d6; 
+    padding: 0.8em;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 rgba(0,0,0, 0.1);
+  }
+  
+  p {
+      text-align: center;
+  }
+  
+  
+  
