@@ -181,3 +181,9 @@ body {
       max-width: 100%;
     }
   }
+
+  /*JS Projects stylings (not currently working)*/
+
+  .playlistjs {
+    height: 50px;
+  }
