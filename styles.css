@@ -1,58 +1,58 @@
 /* Master styles */
 body {
-    font-family: "Lato", sans-serif;
-    margin: 0px;
+  font-family: "Lato", sans-serif;
+  margin: 0px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    /*creates grid for top bar and 1fr is fractional unit.  Its telling it end to end. */
+  display: grid;
+  grid-template-columns: 1fr;
+  /*creates grid for top bar and 1fr is fractional unit.  Its telling it end to end. */
 }
 
 /* Nav styles */
 .nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 38px;
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
 }
 
 .left-side {
-    display: flex;
+  display: flex;
 }
 
 .nav-wrapper > .left-side > div {
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
+  margin-right: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
 }
 
 .nav-link-wrapper {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
 }
 
 .nav-link-wrapper a {
-    color: #8a8a8a;
-    text-decoration: none;
-    transition: color 0.5s;
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
 }
 
 .nav-link-wrapper:hover {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .nav-link-wrapper a:hover {
-    color: black;
+  color: black;
 }
 
 .active-nav-link {
-    border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .active-nav-link a {
-    color: black !important;
+  color: black !important;
 }
 
 
@@ -60,130 +60,134 @@ body {
 /* Portfolio styles */
 
 .portfolio-items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .portfolio-item-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .portfolio-img-background {
-    height: 350px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .img-text-wrapper {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .img-text-wrapper .subtitle {
-    transition: 1s;
-    font-weight: 600;
-    color: transparent
+  transition: 1s;
+  font-weight: 600;
+  color: transparent
 }
 
 .img-darken {
-    transition: 1s;
-    filter: brightness(10%);
+  transition: 1s;
+  filter: brightness(10%);
 }
 
 .image-blur {
-    transition: 1s;
-    filter: brightness(10%);
-  }
-  
+  transition: 1s;
+  filter: brightness(10%);
+}
+
 .img-text-wrapper:hover .subtitle {
-    color: lightseagreen;
-    font-weight: 600;
-  }
-  
+  color: lightseagreen;
+  font-weight: 600;
+}
+
 .logo-wrapper img {
-    width: 90%;
-    margin-bottom: 10px;
-  }
-  
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.logo-wrapper img:hover {
+transform: scale(1.5) rotate(360deg);
+transition: all .3s;
+}
 
 
 /*About Page stylings*/
 
-  .two-column-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .profile-image-wrapper img {
-    width: 100%;
-  }
-  
-  .profile-content-wrapper {
-    padding: 30px;
-  }
-  
-  .profile-content-wrapper h1 {
-    color: lightseagreen;
-  }
-  
-  /*Art Page Stylings*/
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+}
+
+/*Art Page Stylings*/
 
 .art-page-text-wrapper {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 
 /*Art Page picture stylings*/
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33%;
+  padding: 0 1px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
   .column {
-    flex: 25%;
-    max-width: 33%;
-    padding: 0 1px;
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+}
 
-  /*JS Projects stylings (not currently working)*/
-
-  .playlistjs {
-    height: 50px;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
+}
+
+/*JS Projects stylings (not currently working)*/
+
+.playlistjs {
+  height: 50px;
+}
