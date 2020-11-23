@@ -55,8 +55,6 @@ body {
   color: black !important;
 }
 
-
-
 /* Portfolio styles */
 
 .portfolio-items-wrapper {
@@ -92,7 +90,7 @@ body {
 .img-text-wrapper .subtitle {
   transition: 1s;
   font-weight: 600;
-  color: transparent
+  color: transparent;
 }
 
 .img-darken {
@@ -116,10 +114,9 @@ body {
 }
 
 .logo-wrapper img:hover {
-transform: scale(1.5) rotate(360deg);
-transition: all .3s;
+  transform: scale(1.5) rotate(360deg);
+  transition: all 0.3s;
 }
- 
 
 /*About Page stylings*/
 
@@ -136,6 +133,10 @@ transition: all .3s;
   padding: 30px;
 }
 
+.profile-content-wrapper p {
+  text-indent: 25px;
+}
+
 .profile-content-wrapper h1 {
   color: lightseagreen;
 }
@@ -147,7 +148,6 @@ transition: all .3s;
   width: 50%;
   padding: 10px;
 }
-
 
 /*Art Page picture stylings*/
 
