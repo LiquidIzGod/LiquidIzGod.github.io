@@ -1,0 +1,75 @@
+body {
+  background-image: url("page mila/assets/background_cardboard.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.nav-bar-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 10%;
+}
+
+.home_button {
+  position: absolute;
+  display: block;
+  margin-left: 4%;
+  margin-right: auto;
+  margin-top: 3%;
+  width: 15%;
+}
+.about_button {
+  position: absolute;
+  display: block;
+  margin-left: 24%;
+  margin-right: auto;
+  margin-top: 3%;
+  width: 15%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+  margin-left: 10%;
+  margin-right: 15%;
+  margin-top: 27%;
+}
+
+/* Grid cards*/
+
+.grid-left {
+  padding: 3%;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+.grid-right {
+  background-color: lightgray;
+  padding: 3%;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+/* Nav Bar */
+
+/* Home button swap to push on hover */
+.homebuttonswap img:last-child {
+  display: none;
+}
+.homebuttonswap:hover img:first-child {
+  display: none;
+}
+.homebuttonswap:hover img:last-child {
+  display: inline-block;
+}
+
+/* About button swap to push on hover */
+.aboutbuttonswap img:last-child {
+  display: none;
+}
+.aboutbuttonswap:hover img:first-child {
+  display: none;
+}
+.aboutbuttonswap:hover img:last-child {
+  display: inline-block;
+}
