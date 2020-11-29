@@ -15,7 +15,7 @@ function createListItems(arr) {
     return items;
 }
 
-document.querySelector('main').innerHTML = `
+document.getElementById('arrayjsstyle').innerHTML = `
     <ol>
         ${createListItems(playlist)}
     </ol>

@@ -73,3 +73,11 @@ body {
 .aboutbuttonswap:hover img:last-child {
   display: inline-block;
 }
+
+.scroller-container {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.picscroller-wrapper {
+}
