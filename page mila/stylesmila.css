@@ -1,0 +1,208 @@
+/* Full page font styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Pangolin";
+}
+
+h1 {
+  text-align: center;
+  font-size: 6em;
+}
+/* background */
+
+
+#img.background-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Nav bar */
+
+.nav-bar {
+  position: relative;
+  width: 100%;
+  height: 10vw;
+  margin-top: 2vw;
+  padding-bottom: 15%;
+}
+
+.homebtn {
+  position: absolute;
+  padding: 5vw 7vw;
+  margin-left: 5%;
+  margin-top: 2%;
+  background: url("assets/home_button.png") no-repeat;
+  background-size: 14vw;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.homebtn:hover {
+  background: url("assets/home_pushed.png") no-repeat;
+  background-size: 14vw;
+}
+
+
+.aboutbtn {
+  position: absolute;
+  padding: 4vw 8vw;
+  margin-left: 23%;
+  margin-top: 2%;
+  background: url("assets/about_button.png") no-repeat;
+  background-size: 16vw;
+  background-position-x: center;
+  background-position-y: .5vw;
+}
+
+.aboutbtn:hover {
+  background: url("assets/about_pushed.png") no-repeat;
+  background-size: 14vw;
+} 
+
+.milas-title {
+  position: absolute;
+  text-align: center;
+  margin-left: 55%;
+  margin-top: 4%;
+  font-size: 5vw;
+  color:rgb(83, 53, 216);
+  text-shadow: 5px 5px greenyellow;
+}
+
+
+
+
+/* Cards*/
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5% 15% 5% 13%;
+  height: 30vh; 
+}
+
+.flex-left {
+  background-color: rgb(149, 149, 149);
+  height: 100%;
+  width: 40%;
+  box-shadow: 2px 2px 4px #000000;
+  background: url("assets/cardboard_card.png") no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  padding: 2%;
+  min-width: 300px;
+}
+
+.flex-right {
+  background-color: lightgray;
+  height: 100%;
+  width: 40%;
+  box-shadow: 2px 2px 4px #000000;
+  background: url("assets/cardboard_card.png") no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  padding: 2%;
+  min-width: 300px;
+}
+
+/* Card text styles */
+
+.flex-left h1 {
+  text-align: center;
+}
+.flex-right h1 {
+  text-align: center;
+}
+
+
+/* Picture scroller */
+
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-container {
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroller-bg {
+  width: 70vw;
+  height: 35vw;
+  padding: 40px;
+  background: url("/page\ mila/assets/scroller_background.png") no-repeat center /
+    cover;
+  background-size: 100%;
+  background-size: 58vw;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.scroller-bg:onclick {
+  background: url("/page\ mila/assets/home_button.png")
+}
+
+.scroller {
+  width: 50%;
+  min-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: absolute;
+}
+
+.scroller img {
+  width: 80%;
+  box-shadow: 5px 10px 8px black;
+}
+
+/* Text decoration */
+
+.text-dec h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  text-align: center;
+}
+.text-dec p {
+  margin: 20px 0;
+  font-weight: 500;
+  line-height: 25px;
+}
+.text-dec a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: yellow;
+  color: black;
+  padding: 20px 30px;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .scroll-bg {
+    width: 100%;
+  }
+  .right {
+    width: 80%;
+    margin: 0;
+    margin-top: -100px;
+  }
+}
+
