@@ -1,0 +1,105 @@
+/*
+Remember
+o Simplify.  If it doesnt need to be modded dont.
+o Work with phone size first.
+o Explain what I'm doing to myself by using notes.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.master-wrapper {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* portfolio body */
+
+.portfolio-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bg {
+  width: 500px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.logo {
+  z-index: 999;
+}
+
+/* Effects */
+
+/* fix for vanilla tilt */
+.bg:hover {
+  z-index: 9999;
+}
+
+a {
+  z-index: 9999;
+}
+
+.bg h2,
+.bg img {
+  transform: translateZ(50px);
+}
+
+a {
+  color: #0060b6;
+  text-decoration: none;
+}
+/* logo */
+img.logo {
+  width: 50%;
+  margin-top: 20%;
+}
+
+.bg h2 {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 1017px) {
+  .master-wrapper {
+    width: 100%;
+  }
+  .bg {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 817px) {
+  .master-wrapper {
+    width: 100%;
+  }
+  .bg {
+    width: 380px;
+    height: 250px;
+  }
+}
+
+@media Only screen and (max-width: 450px) {
+  .master-wrapper {
+    width: 100%;
+  }
+  .bg {
+    height: 280px;
+    width: 100%;
+  }
+}
