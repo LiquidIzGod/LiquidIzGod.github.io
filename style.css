@@ -48,7 +48,7 @@ o Explain what I'm doing to myself by using notes.
   z-index: 9999;
 }
 
-a {
+a:hover {
   z-index: 9999;
 }
 

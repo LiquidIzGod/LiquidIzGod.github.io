@@ -1,0 +1,15 @@
+/*Art Page Stylings*/
+
+.art-page-text-wrapper {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+/*Art Page picture stylings*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}

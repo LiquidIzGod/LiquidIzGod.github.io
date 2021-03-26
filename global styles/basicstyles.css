@@ -10,51 +10,6 @@ body {
   /*creates grid for top bar and 1fr is fractional unit.  Its telling it end to end. */
 }
 
-/* Nav styles */
-.nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 38px;
-}
-
-.left-side {
-  display: flex;
-}
-
-.nav-wrapper > .left-side > div {
-  margin-right: 20px;
-  font-size: 0.9em;
-  text-transform: uppercase;
-}
-
-.nav-link-wrapper {
-  height: 22px;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.5s;
-}
-
-.nav-link-wrapper a {
-  color: #8a8a8a;
-  text-decoration: none;
-  transition: color 0.5s;
-}
-
-.nav-link-wrapper:hover {
-  border-bottom: 1px solid black;
-}
-
-.nav-link-wrapper a:hover {
-  color: black;
-}
-
-.active-nav-link {
-  border-bottom: 2px solid black;
-}
-
-.active-nav-link a {
-  color: black !important;
-}
-
 /* Portfolio styles */
 
 .portfolio-items-wrapper {
@@ -116,45 +71,6 @@ body {
 .logo-wrapper img:hover {
   transform: scale(1.5) rotate(360deg);
   transition: all 0.3s;
-}
-
-/*About Page stylings*/
-
-.two-column-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.profile-image-wrapper img {
-  width: 100%;
-}
-
-.profile-content-wrapper {
-  padding: 30px;
-}
-
-.profile-content-wrapper p {
-  text-indent: 25px;
-}
-
-.profile-content-wrapper h1 {
-  color: lightseagreen;
-}
-
-/*Art Page Stylings*/
-
-.art-page-text-wrapper {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-}
-
-/*Art Page picture stylings*/
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
