@@ -1,0 +1,116 @@
+/* project page stylings */
+.projecttoppage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.projectmainstyle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "topleft topright"
+    "bottomleft bottomright";
+  grid-gap: 0.3em;
+  justify-items: center;
+}
+
+/* topleft card */
+
+.topleft {
+  grid-area: topleft;
+  text-align: center;
+  background-color: lightseagreen;
+  min-width: 500px;
+}
+
+/* playlist stylings*/
+.arrayjsstyle {
+  grid-area: topleft;
+
+  border: 2px solid black;
+  padding: 5% 5% 5%;
+  text-align: left;
+}
+
+.arrayjsstyle body {
+  font-size: 1em;
+  font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top: 1em;
+  background-color: #42b4d6;
+}
+
+.arrayjsstyle h1 {
+  font-size: 3.75em;
+  text-align: center;
+  margin-bottom: 0.35em;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.arrayjsstyle h2 {
+  font-size: 2.5em;
+  font-weight: normal;
+}
+
+.arrayjsstyle p {
+  font-size: 1.9em;
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.arrayjsstyle ul,
+ol {
+  list-style-position: inside;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+.arrayjsstyle li {
+  line-height: 1.25;
+  margin: 0 0 1.1em;
+  color: #42b4d6;
+  padding: 0.8em;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.arrayjsstyle p {
+  text-align: center;
+}
+
+.topright {
+  grid-area: topright;
+  min-width: 500px;
+  text-align: left;
+  padding-top: 30px;
+}
+.milacardtitle h1 {
+  text-align: center;
+}
+
+.topright {
+  padding: 30px;
+}
+
+.topright {
+  background-image: url("/images/page mila/assets/cardboard_card.png");
+}
+
+.bottomleft {
+  grid-area: bottomleft;
+  min-width: 500px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.bottomright {
+  grid-area: bottomright;
+  min-width: 500px;
+  text-align: center;
+  padding-top: 30px;
+  background-color: lightseagreen;
+}

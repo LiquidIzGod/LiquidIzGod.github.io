@@ -1,0 +1,26 @@
+:is(h1, h2, h3, h4, h5, h6, p) {
+  font-family: "Roboto", serif;
+}
+ul li {
+  font-family: "Roboto", serif;
+}
+
+h1 {
+  color: #9cdcfe;
+  font-size: 30px;
+  text-shadow: 4px 4px 4px black;
+}
+
+h2 {
+  color: #d09169;
+  font-size: 30px;
+  text-shadow: 4px 4px 4px black;
+}
+
+p {
+  margin-left: 2rem;
+}
+
+/* 
+font-family: "Lato", sans-serif;
+ */
