@@ -1,8 +1,8 @@
 .side-bar-wrapper {
-    position: relative;
-    width: 10vw;
-  }
-  
-  .side-bar-bg {
-    color: lightseagreen;
-  }
+  position: relative;
+  width: 10vw;
+}
+
+.side-bar-bg {
+  color: lightseagreen;
+}

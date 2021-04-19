@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sean Fallon Frame Work</title>
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 <body>
@@ -17,29 +19,35 @@ Working on
 o  Making a layout in flex to apply to all pages
 o  Making a font page for all pages
 o  Transfering the layouts and fonts applied in basicstyles
+o  code.css is the new basicstyles layout.  Need to switch things around
 
   -->
+  
 <div class="master-wrapper">
 
 
     <!-- Navigation bar -->
-    <div class="nav-wrapper">
-        <div class="left-side">
-          <div class="nav-link-wrapper active-nav-link">
-            <a href="index.html">Home</a>
+    <div class="nav-wrapper"> <!-- Navigation bar -->
+      <div class="left-side">
+          <div class="nav-link-wrapper">
+              <div class="nav-btn">
+              <a href="index.html">Home</a>
+              </div>
           </div>
   
           <div class="nav-link-wrapper">
-            <a href="about.html">About</a>
+              <div class="nav-btn">
+              <a href="about.html">About</a>
+              </div>
           </div>
-        </div>
-  
-        <div class="right-side">
-          <div class="brand">
-            Sean Fallon
-          </div>
-        </div>
       </div>
+  
+      <div class="right-side">
+          <div class="brand">
+              <h1>Sean Fallon</h1>
+          </div>
+      </div>
+  </div> <!-- nav stop --> 
 
 
 
@@ -93,7 +101,23 @@ o  Transfering the layouts and fonts applied in basicstyles
 
     </div>
 
+
+
 </div> 
+
+<footer>
+
+  <h1>placeholder Footer</h1>
+
+  <ul>
+    <li>Contact info</li>
+    <li>Telegram</li>
+    <li>email</li>
+  </ul>
+</footer>
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 <script>
     VanillaTilt.init(document.querySelectorAll(".bg"), {

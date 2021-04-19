@@ -3,9 +3,11 @@
     <meta name="viewport" content="width=device-width">
     <title>Art3</title>
     <meta name="description" content="Demonstration of a webkit-specific work around to fix a horizontal scrolling issue with CSS parallax">
-    <link rel="stylesheet" href="css/art3.css">
+    <link rel="stylesheet" href="css/art.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
     <script defer src="js/btn_collapse.js"></script>
     </head>
 <!-- 
@@ -31,48 +33,60 @@ o
                 
                 <div class="nav-wrapper"> <!-- Navigation bar -->
                     <div class="left-side">
-                    <div class="nav-link-wrapper">
-                        <a href="index.html">Home</a>
-                    </div>
+                        <div class="nav-link-wrapper">
+                            <div class="nav-btn">
+                            <a href="index.html">Home</a>
+                            </div>
+                        </div>
 
-                    <div class="nav-link-wrapper">
-                        <a href="about.html">About</a>
-                    </div>
+                        <div class="nav-link-wrapper">
+                            <div class="nav-btn">
+                            <a href="about.html">About</a>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="right-side">
-                    <div class="brand">
-                        Sean Fallon
-                    </div>
+                        <div class="brand">
+                            <h1>Sean Fallon</h1>
+                        </div>
                     </div>
                 </div> <!-- nav stop --> 
             
                    
 
             <div class="intro-wrapper">
-                <div class="top-container"> <!-- Inside the intro card -->
-                    <h1>Art</h1>
-                    <p>All the buttons, animations, images, photography and video you see on this site is done by me.
-                    </p>
-                    <br>
-                    <p>I've used Adobe Photoshop and Premiere most of my entire life.  
-                        I have a strong background in art and an eye for design.
-                    </p>
-                    <br>
-                    <h1>Design</h1>
-                    <p>Buisness cards, Posters, Flyers, Ads.  Fully designed, printed and destributed by me.
-                    Some projects are sketches or rough drafts I'm posting to highlight a specific skill.
-                    </p>
-                    <br>
-                    <p>
-                    All aspects of content you see, was all created by me.
-                    All photography, design, printing, handing them out and being the event MC/cordinater.
-                    All events and giveaways were all my idea as well.
-                    </p>
+                <div class="area-resizer">
+                    <div class="art-intro-card"> <!-- Inside the intro card -->
+                        <div>
+                            <h1>Art</h1>
+                            <p>All the buttons, animations, images, photography and video you see on this site is done by me.
+                            </p>
+                            <br>
+                            <p>I've used Adobe Photoshop and Premiere most of my entire life.  
+                                I have a strong background in art and an eye for design.
+                            </p>
+                            <br>
+                        </div>
+                        <div>
+                            <h1>Design</h1>
+                            <p>Buisness cards, Posters, Flyers, Ads.  Fully designed, printed and destributed by me.
+                            Some projects are sketches or rough drafts I'm posting to highlight a specific skill.
+                            </p>
+                            <br>
+                            <p>
+                            All aspects of content you see, was all created by me.
+                            All photography, design, printing, handing them out and being the event MC/cordinater.
+                            All events and giveaways were all my idea as well.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="img-wrapper">
+                        <img class="intro-img" src="/page art/images/code gremlin outline fixed.svg">
+                    </div>
                 </div>
-                <div class="intro">
-                    <img src="/page art/images/LTG Logo Transparent.png">
-                </div>
+
             </div>
 
           </div>  <!-- Group 1 layer END -->
@@ -88,7 +102,10 @@ o
           </div>
 
           <div class="parallax__layer parallax__layer--back">
-            <div class="title">Welcome to my Website</div>
+            <div class="title">
+                <h1>"A work of art which did not begin in emotion is not art." <br>
+                     ―  Paul Cezanne</h1>
+            </div>
             <img class="mtimg midground" src="images/mt_bg/forwardclouds.png" alt="">
           </div>
 
@@ -104,9 +121,14 @@ o
 
         <div id="group1" class="parallax__group section2">
           <div class="parallax__layer parallax__layer--base section3">
+                        
+            <div class="artbox">
+        
                         <h1>Business Card Designs</h1>
-
-                        <button type="button" class="collapsible">Open Collapsible</button>
+                        
+                        <button type="button" class="collapsible">
+                            <h2>Open Collapsible</h2>
+                        </button>
                         <div class="content"> <!--Collapsible container open-->
                             <div class="row">
                                 <div class="column">
@@ -134,7 +156,7 @@ o
 
                         <h1>Flyer Card Designs</h1>
 
-                        <button type="button" class="collapsible">Open Collapsible</button>
+                        <button type="button" class="collapsible"><h2>Open Collapsible</h2></button>
                         <div class="content"> <!--Collapsible container open-->
                             <div class="row">
                                 <div class="column">
@@ -154,11 +176,13 @@ o
 
                         <h1>Logo</h1>
 
-                        <button type="button" class="collapsible">Open Collapsible</button>
+                        <button type="button" class="collapsible"><h2>Open Collapsible</h2></button>
                         <div class="content"> <!--Collapsible container open-->
                             <div class="row">
                                 <div class="column">
                                     <img src="/page art/images/Raur Man Logo Finish.png">
+                                    This is SVG
+                                    <img src="/page art/images/code gremlin outline fixed.svg">
                                 </div>
                                 <div class="column">
                                     <img src="/page art/images/Ruar Mans Logo Simple.png">
@@ -171,7 +195,7 @@ o
 
                         <h1>Drawing</h1>
 
-                        <button type="button" class="collapsible">Open Collapsible</button>
+                        <button type="button" class="collapsible"><h2>Open Collapsible</h2></button>
                         <div class="content"> <!--Collapsible container open-->
                             <div class="row">
                                 <div class="column">
@@ -184,10 +208,11 @@ o
                                 </div>
                                 <div class="column">
                                     <img src="/page art/images/ant_lion.jpg">
+                                    <img src="/page art/images/code_gremlin.jpg">
                                 </div>
                             </div>
                         </div> <!--Collapsible container close-->
-
+                    </div>  <!-- artbox close -->
 
 
 

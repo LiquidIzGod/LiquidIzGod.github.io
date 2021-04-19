@@ -1,20 +1,20 @@
 :is(h1, h2, h3, h4, h5, h6, p) {
-  font-family: "Roboto", serif;
+  font-family: "Nunito", sans-serif;
 }
 ul li {
-  font-family: "Roboto", serif;
+  font-family: "Nunito", sans-serif;
 }
 
 h1 {
-  color: #9cdcfe;
+  color: #80e7ff;
   font-size: 30px;
   text-shadow: 4px 4px 4px black;
+  /* -webkit-text-stroke: 1px black; */
 }
 
 h2 {
-  color: #d09169;
-  font-size: 30px;
-  text-shadow: 4px 4px 4px black;
+  color: #000;
+  font-size: 1.5rem;
 }
 
 p {

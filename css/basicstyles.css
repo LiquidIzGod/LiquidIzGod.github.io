@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 /* Master styles */
 body {
   font-family: "Lato", sans-serif;
