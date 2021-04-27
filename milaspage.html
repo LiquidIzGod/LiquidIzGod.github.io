@@ -5,6 +5,7 @@
     <title>Sean Fallon Frame Work</title>
     <link rel="stylesheet" href="css/stylesmila.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin">
+    <script defer src="js/milapicswitcher.js"></script>
 </head>
 
 <body>
@@ -46,10 +47,24 @@ o
 
 <section>
     <div class="scroll-container">
-
         <div class="scroller-bg"></div>
         <div class="scroller">
-                <img src="images/page mila/assets/art_example.png" alt="">
+                          <!-- Container for gallery -->
+                          <div class="container">
+                            <!-- Main view of gallary -->
+                            <div class="main_view">
+                                <img src="images/page mila/pic_switcher/pics1.jpg" id="main" alt="IMAGE">
+                            </div>
+                
+                            <!-- All images with side view -->
+                            <div class="side_view">
+                                <img src="images/page mila/pic_switcher/pics1.jpg" onclick="change(this.src)">
+                                <img src="images/page mila/pic_switcher/pics2.jpg" onclick="change(this.src)">
+                                <img src="images/page mila/pic_switcher/pics3.jpg" onclick="change(this.src)">
+                                <img src="images/page mila/pic_switcher/pics4.jpg" onclick="change(this.src)">
+                            </div>
+                        </div> <!-- pic switcher close -->
+                <!-- <img src="images/page mila/assets/art_example.png" alt=""> -->
         </div>
     </div>
 </section>

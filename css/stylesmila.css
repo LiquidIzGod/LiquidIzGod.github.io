@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Pangolin";
 }
@@ -160,7 +161,40 @@ section {
 
 .scroller img {
   width: 80%;
-  box-shadow: 5px 10px 8px black;
+}
+
+/* pic switcher */
+/*Setting Basic Dimensions to give 
+        gallary view */
+.container {
+  margin: 0 auto;
+  /* width: 90vw; */
+  /* height: 30vw; */
+  height: 100%;
+  object-fit: contain;
+}
+
+.main_view {
+  margin: 0 auto;
+  width: 80%;
+  height: 25rem;
+}
+.main_view img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.side_view {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.side_view img {
+  width: 9rem;
+  height: 7rem;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 0.5rem;
 }
 
 /* Text decoration */

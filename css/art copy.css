@@ -7,44 +7,84 @@ html {
   margin: 0;
   padding: 0;
 }
-
-/* Art page layout */
+/*testing area*/
 
 .intro-img {
-  width: 400px;
-  float: right;
-  margin-right: -8vw;
-  margin-top: -8vw;
+  width: 100%;
 }
 
 .art-intro-card {
-  margin: 10%;
+  background-color: #c4c2bc;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px black;
 }
 
-@media screen and (max-width: 736px) {
-  .intro-img {
-    clear: both;
-    width: 400px;
-    width: 100%;
-    margin: 0;
-  }
-  .art-intro-card {
-    margin: 10px;
-  }
+.mtimg {
+  width: 100%;
 }
-/* styles for intro area */
+
+/* Art3 page styles */
+
+/* .intro-wrapper {
+  padding-left: 15%;
+}
+
+.area-resizer {
+  display: flex;
+  margin: 50px;
+  width: 90%;
+}
+
+.art-intro-card {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+.art-intro-card {
+  background-color: #c4c2bc;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px black;
+} */
+
+/*
+.intro-img {
+  position: absolute;
+  top: 270px;
+  width: 50%;
+  margin-left: 45%;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0, 0.8));
+} 
+*/
+
+/* .img-wrapper {
+  position: relative;
+  margin-left: -200px;
+  margin-top: -100px;
+} */
+
+/* 
+.intro-img {
+  max-width: 100%;
+  max-height: 100%;
+  transform: scale(0.7);
+} */
 
 .intro-img {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(10px 10px 10px rgb(0, 0, 0, 0.8));
 }
 
-.art-intro-card {
-  padding: 10px;
-  background-color: #c4c2bc;
-  border-radius: 20px;
-  box-shadow: 10px 10px 10px black;
+/*
+@media only screen and (max-width: 930px) {
 }
+ */
 
 /* backgrounds for each section */
 .section1 {
@@ -67,6 +107,13 @@ html {
 /* div that surrounds all the artwork collapsibles */
 
 .artbox {
+  /* background-color: #33354b; */
+  /* background-image: linear-gradient(30deg, #33354b 40%, #f4f4f4); */
+  /* border: 10px solid linear-gradient(30deg, #33354b 40%, #f4f4f4); */
+  /* border-style: solid;
+  border-width: 10px;
+  border-image: linear-gradient(30deg, #12131a 40%, #f4f4f4) 1;
+  border-radius: 20px; */
   border: double 10px transparent;
   border-radius: 30px;
   background-image: linear-gradient(#33354b, #33354b),
@@ -178,6 +225,15 @@ html {
   z-index: 2; /* slide under group 3 and 5 */
 }
 
+/* 
+@media screen and (max-width: 2560px) {
+  .parallax {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+} 
+*/
+
 /* Collapsible container styles */
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -230,10 +286,22 @@ html {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1000px) {
-  .column {
+  /* .column {
     flex: 50%;
     max-width: 50%;
   }
+  .img-wrapper {
+    position: relative;
+    margin-left: -200px;
+    margin-top: -100px;
+  }
+  .art-intro-card {
+    margin-top: 200px;
+    padding: 30px;
+  }
+  .intro-wrapper {
+    padding: 0;
+  } */
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
