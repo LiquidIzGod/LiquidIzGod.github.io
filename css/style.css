@@ -73,6 +73,9 @@ img.logo {
   margin: 0 auto;
   width: 100%;
 }
+.updates {
+  margin: 50px;
+}
 
 @media screen and (max-width: 1017px) {
   .master-wrapper {
