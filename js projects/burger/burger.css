@@ -1,0 +1,414 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+height:100%;
+}
+/*======================
+            Fonts
+=========================*/
+
+h1, li {
+font-family: 'Roboto', sans-serif;
+}
+
+li {
+list-style-type:none;
+}
+
+
+/*======================
+        Layout
+=========================*/
+
+.debug {
+outline: 4px solid red;
+}
+.debug2 {
+outline: 8px dotted red;
+}
+
+/*======================
+        Nav
+=========================*/
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4C212A;
+}
+
+.placeholder {
+    width: 70%;
+}
+
+.navbar button {
+    width: 50px;
+    height: 50px;
+}
+
+/*======================
+        Content
+=========================*/
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.app{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: -webkit-linear-gradient(to left, #004E98, #3A6EA5, #4C212A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #004E98, #3A6EA5, #4C212A);
+    height: 600px;
+    width: 100%;
+    z-index: -3;
+}
+
+/*Overlay diner image has its top set to same height as navbar*/
+
+.app::before {
+    content: "";
+    background-image: url(imgs/classicdiner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .1;
+    top: 100px;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.blueBox {
+    width: 300px;
+    height: max-content;
+    background-color: lightblue;
+    padding: 40px;
+    z-index: 2;
+    box-shadow: 5px 5px 10px 1px black;
+}
+
+div button {
+float: right;
+}
+
+ul li button {
+float: right;
+}
+
+li {
+height: 1.5em;
+margin-left: 0px;
+}
+
+/*======================
+    Right Card Layout
+=========================*/
+
+.right-card {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+margin: 0 0 0 40px;
+}
+
+.burg-container {
+width: max-content;
+height: 200px;
+z-index: 2;
+}
+
+/*======================
+        Burger Art
+=========================*/
+.bun {
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+width: 200px;
+height: 80px;
+border: none;
+-webkit-border-radius: 90px 90px 26px 26px;
+border-radius: 90px 90px 26px 26px;
+font: normal 16px/1 "Times New Roman", Times, serif;
+color: black;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+background: rgba(249,173,70,255);
+}
+
+.seeds {
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+width: 10px;
+height: 10px;
+position: relative;
+top: 50px;
+left: 100px;
+border: none;
+-webkit-border-radius: 63px 73px 11px 82px;
+border-radius: 63px 73px 11px 82px;
+font: normal 1px/normal "Times New Roman", Times, serif;
+color: rgba(0,0,0,0.9);
+-o-text-overflow: clip;
+text-overflow: clip;
+background: rgb(251,246,229);
+-webkit-box-shadow: 59px -14px 0 0 rgb(251,246,229) , -34px -18px 0 0 rgb(251,246,229) , 37px 13px 0 0 rgb(251,246,229) ;
+box-shadow: 59px -14px 0 0 rgb(251,246,229) , -34px -18px 0 0 rgb(251,246,229) , 37px 13px 0 0 rgb(251,246,229) ;
+}
+
+.seeds2 {
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+width: 10px;
+height: 10px;
+position: relative;
+top: 53px;
+left: 80px;
+border: none;
+-webkit-border-radius: 63px 73px 11px 82px;
+border-radius: 63px 73px 11px 82px;
+font: normal 1px/normal "Times New Roman", Times, serif;
+color: rgba(0,0,0,0.9);
+-o-text-overflow: clip;
+text-overflow: clip;
+background: rgb(251,246,229);
+-webkit-box-shadow: 0 -70px 0 0 rgb(251,246,229) , -30px -18px 0 0 rgb(251,246,229) , -15px 53px 0 0 rgb(251,246,229) ;
+box-shadow: 0 -70px 0 0 rgb(251,246,229) , -30px -18px 0 0 rgb(251,246,229) , -15px 53px 0 0 rgb(251,246,229) ;
+-webkit-transform: rotateZ(94deg)   ;
+transform: rotateZ(94deg)   ;
+}
+  
+.seedsfix {
+height: 10px;
+}
+
+.cheese {
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+width: 39px;
+height: 23px;
+margin: 0 0 0 21px;
+border: none;
+-webkit-border-radius: 13px 0 30px 30px;
+border-radius: 13px 0 30px 30px;
+font: normal 16px/1 "Times New Roman", Times, serif;
+color: black;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+background: rgb(252,220,84);
+-webkit-box-shadow: 78px 0 0 0 rgb(252,220,84) ;
+box-shadow: 78px 0 0 0 rgb(252,220,84) ;
+}
+
+.cheese2 {
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+width: 50px;
+height: 9px;
+top: 0;
+margin: 0 0 0 24px;
+border: 10px solid rgb(252,220,84);
+-webkit-border-radius: 109px 109px 0 0 / 87px 87px 0 0;
+border-radius: 109px 109px 0 0 / 87px 87px 0 0;
+font: normal 16px/1 "Times New Roman", Times, serif;
+color: black;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+border-bottom: 0px;
+}
+
+.cheese2:after {
+content: "";
+width: 30px;
+height: 30px;
+background-color: rgb(252,220,84);
+position: absolute;
+margin: 0 0 0 70px;
+border-radius: 0 0 109px 109px/ 0 0 87px 87px;
+/*   box-shadow: 10px 0px 0px 2px #555; */
+}
+
+.cheese3 {
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+width: 180px;
+height: 6px;
+border: none;
+    margin: -10px 0 0 -45px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+font: normal 16px/1 "Times New Roman", Times, serif;
+color: black;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+background: rgb(252,220,84);
+}
+
+.cheese3:after {
+content: "";
+width: 16px;
+height: 6px;
+position: absolute;
+margin: 4px 0 0 31px;
+border: 5px solid rgb(252,220,84);
+border-bottom: 0;
+border-radius: 109px 109px 0 0 / 87px 87px 0 0;
+}
+
+.meat {
+    -webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+width: 200px;
+height: 50px;
+border: none;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+font: normal 16px/1 "Times New Roman", Times, serif;
+color: black;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+background: rgba(110,21,12,255);
+}
+
+.bottom-bun {
+    -webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+width: 200px;
+height: 50px;
+border: none;
+-webkit-border-radius: 10px 10px 50px 50px;
+border-radius: 10px 10px 50px 50px;
+font: normal 16px/1 "Times New Roman", Times, serif;
+color: black;
+-o-text-overflow: ellipsis;
+text-overflow: ellipsis;
+background: rgba(249,172,71,255);
+}
+
+/*======================
+    Background Pickles
+=========================*/
+  
+.boxes ul{
+display:block;
+width:100%;
+height:inherit;
+}
+.boxes ul{
+list-style-type:none;
+}
+.boxes ul li:nth-child(1) {
+position:absolute;
+left:10%;
+width: 30px;
+height: 30px;
+background-image: url('imgs/pickle.png');
+background-repeat: no-repeat;
+background-size: cover;
+animation-delay: 3s;
+}
+.boxes ul li:nth-child(2) {
+position:absolute;
+left: 30%;
+width: 45px;
+height: 45px;
+background-image: url('imgs/pickle.png');
+background-repeat: no-repeat;
+background-size: cover;
+animation-delay: 5s;
+}
+.boxes ul li:nth-child(3) {
+position:absolute;
+left: 53%;
+width: 70px;
+height: 70px;
+background-image: url('imgs/pickle.png');
+background-repeat: no-repeat;
+background-size: cover;
+}
+.boxes ul li:nth-child(4) {
+position:absolute;
+left: 80%;
+width: 20px;
+height: 20px;
+background-image: url('imgs/pickle.png');
+background-repeat: no-repeat;
+background-size: cover;
+animation-delay: 4s;
+}
+.boxes ul li {
+animation:animate 10s linear 1s infinite;
+z-index: 1;
+}
+
+
+  
+@keyframes animate{
+    from{
+        transform: translateY(0px) rotate(180deg)
+    }
+    to{
+        transform: translateY(-650px)
+        rotate(360deg)
+    }
+}
+
+.picklehidder {
+    width: 100%;
+    height: 100px;
+}
+.picklehiddercover {
+    width: 100%;
+    height: 100px;
+    background-color: aliceblue;
+    z-index: 2;
+    position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .app {
+        height: 900px;
+        padding: 0;
+        margin: 0;
+    }
+    .boxes ul li {
+        animation:animate 16s linear 1s infinite;
+        z-index: 1;
+        }
+    @keyframes animate{
+        from{
+            transform: translateY(0px) rotate(180deg)
+        }
+        to{
+            transform: translateY(-990px)
+            rotate(360deg)
+        }
+    }
+  }

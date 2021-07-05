@@ -1,6 +1,11 @@
+/* General Layout for all pages */
 * {
   margin: 0;
   padding: 0;
+}
+
+.debug {
+  outline: 2px blue dotted;
 }
 
 .side-bar-wrapper {
@@ -33,7 +38,8 @@
   flex-basis: 100%;
   flex: 2;
 }
-.right-column {
+
+.right-column, .left-column {
   background-color: #c4c2bc;
   border-radius: 10px;
 }
@@ -56,3 +62,4 @@
 .center-flex img {
   width: 50%;
 }
+
